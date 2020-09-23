@@ -11,7 +11,7 @@ class MulBit:
     def run(self):
         for i in range(1, self.m_len + 1):
             if self.q[-i]:
-                self.sum(self.result[0:self.m_len])
+                self.sum(self.result[0:(self.m_len+1)])
 
             self.shift()
 
@@ -38,7 +38,7 @@ class MulBit:
         self.setSumResult(ca)
 
     def setSumResult(self, sum_array):
-        self.result = sum_array + self.result[self.m_len:self.result_len]
+        self.result = sum_array + self.result[(self.m_len+1):self.result_len]
 
     def shift(self):
         for i in range(len(self.result) - 1, 0, -1):
