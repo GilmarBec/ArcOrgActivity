@@ -23,17 +23,20 @@ class MulBit:
             if ca[i] and m[i]:
                 ca[i] = tmp
                 tmp = 1
-            else:
-                ca_or_m = ca[i] or m[i]
+                continue
 
-                if tmp:
-                    if ca_or_m:
-                        ca[i] = 0
-                    else:
-                        ca[i] = 1
-                        tmp = 0
-                else:
-                    ca[i] = ca_or_m
+            ca_or_m = ca[i] or m[i]
+
+            if tmp:
+                if ca_or_m:
+                    ca[i] = 0
+                    continue
+
+                ca[i] = 1
+                tmp = 0
+                continue
+
+            ca[i] = ca_or_m
 
         self.setSumResult(ca)
 

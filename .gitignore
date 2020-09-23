@@ -1,4 +1,2 @@
 .idea/*
-*/__pycache__/*
-
-sample/test/__pycache__/
+**/__pycache__/
