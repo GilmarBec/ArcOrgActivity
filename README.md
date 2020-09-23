@@ -6,5 +6,7 @@ Este projeto podia ser feito em qualquer linguagem, a escolhida da vez foi Pytho
 Utilizei apenas listas, somas e operações buleanas para a primeira versão, porém depois de um tempo acho que passei um pouco do ponto e estamos aqui.
 
 ## Utilização:
+Rode o arquivo `core.py` e adicione os seus números binários com cada um dos algarismos separados por vírgula(,).
 
-Para utilizar este projeto adicione ao Documento DataProvider.py o seu teste e rode o ```core.py```
+## Rotinas de Teste
+Para utilizar estes testes apenas adicione ao Documento `sample/test/DataProvider.py` o seu teste e rode o `test.py` utilizando os padrões eexistentes neste arquivo.
