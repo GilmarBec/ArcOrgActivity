@@ -15,8 +15,6 @@ class MulBit:
 
             self.shift()
 
-        print(self.result)
-
     def sum(self, ca):
         m = [0] + self.m
         tmp = 0

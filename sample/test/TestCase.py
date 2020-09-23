@@ -1,5 +1,5 @@
-from MulBit import MulBit
-from DataProvider import DATA_PROVIDER
+from sample.MulBit import MulBit
+from sample.test.DataProvider import DATA_PROVIDER
 import time
 
 

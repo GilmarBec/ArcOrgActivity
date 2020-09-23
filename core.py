@@ -1,8 +1,12 @@
-from TestCase import TestCase
+from sample.MulBit import MulBit
 
-test = TestCase()
+m = input("First number in bits, separated by comma(','): ")
+q = input("Second number in bits, separated by comma(','): ")
 
-test.test_8_bits()
-test.test_16_bits()
-test.test_32_bits()
-test.test_64_bits()
+m = m.split(',')
+q = q.split(',')
+
+mul_bit = MulBit(m, q)
+mul_bit.run()
+
+print(mul_bit.result)
