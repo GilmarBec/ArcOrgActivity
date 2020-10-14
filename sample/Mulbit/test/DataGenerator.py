@@ -1,4 +1,4 @@
-from sample.test.DataProvider import DATA_PROVIDER
+from sample.Mulbit.test.DataProvider import DATA_PROVIDER
 
 changes = 0
 

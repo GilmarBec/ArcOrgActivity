@@ -1,4 +1,4 @@
-from sample.test.TestCase import TestCase
+from sample.Mulbit.test.TestCase import TestCase
 
 test = TestCase()
 

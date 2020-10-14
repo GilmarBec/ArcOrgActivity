@@ -1,4 +1,4 @@
-from sample.MulBit import MulBit
+from sample.Mulbit.MulBit import MulBit
 
 m = input("First number in bits, separated by comma(','): ")
 q = input("Second number in bits, separated by comma(','): ")

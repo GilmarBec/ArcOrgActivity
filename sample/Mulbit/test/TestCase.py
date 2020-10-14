@@ -1,6 +1,7 @@
-from sample.MulBit import MulBit
-from sample.test.DataProvider import DATA_PROVIDER
 import time
+
+from sample.Mulbit.MulBit import MulBit
+from sample.Mulbit.test.DataProvider import DATA_PROVIDER
 
 
 class TestCase:
