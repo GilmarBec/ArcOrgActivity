@@ -75,13 +75,15 @@ class Binary:
         self.exponent += 1
 
         tmp, self.whole = self.shift(self.whole, self.RIGHT_SHIFT)
-        self.fractional = list(tmp) + self.fractional
+        self.fractional = self.mixed_to_list(tmp) + self.mixed_to_list(self.fractional)
 
     def decrement_exponent(self):
         self.exponent -= 1
 
         tmp, self.fractional = self.shift(self.fractional)
-        self.whole += tmp
+
+        self.whole = self.mixed_to_list(self.whole)
+        self.whole += self.mixed_to_list(tmp)
 
     def shift_chain(self, array, side: str = LEFT_SHIFT):
         if side == self.LEFT_SHIFT:
@@ -98,7 +100,7 @@ class Binary:
 
     def shift(self, array, side: str = LEFT_SHIFT):
         if not len(array):
-            return [0, 0]
+            return [[0], [0]]
 
         if side == self.LEFT_SHIFT:
             tmp = array[0]
